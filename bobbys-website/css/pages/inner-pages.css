@@ -1,0 +1,27 @@
+/* Inner Page Styles - Bobby's Restaurant & Lounge */
+
+/* ===== PAGE HEADER ===== */
+
+.page-header {
+  padding-top: calc(var(--header-height) + var(--space-3xl));
+  padding-bottom: var(--space-3xl);
+  text-align: center;
+}
+
+.page-header h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.page-header .subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-brass);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (min-width: 768px) {
+  .page-header {
+    padding-top: calc(var(--header-height) + var(--space-4xl));
+    padding-bottom: var(--space-4xl);
+  }
+}

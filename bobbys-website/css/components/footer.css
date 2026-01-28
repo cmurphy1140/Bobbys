@@ -1,0 +1,128 @@
+/* Footer - Bobby's Restaurant & Lounge */
+
+.footer {
+  background-color: var(--color-mahogany);
+  color: var(--color-cream);
+  padding: var(--space-3xl) 0 var(--space-lg);
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+/* Brand Section */
+.footer__brand h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--color-brass);
+  margin-bottom: var(--space-xs);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.footer__brand p {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+  opacity: 0.8;
+}
+
+.footer__brand address {
+  font-style: normal;
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+/* Hours Section */
+.footer__hours h4,
+.footer__contact h4 {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  letter-spacing: 0.1em;
+  color: var(--color-brass);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+}
+
+.footer__hours p {
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
+  opacity: 0.8;
+}
+
+/* Contact Section */
+.footer__contact a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-cream);
+  text-decoration: none;
+  margin-bottom: var(--space-sm);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.footer__contact a:hover {
+  opacity: 1;
+  color: var(--color-brass);
+}
+
+.footer__contact i {
+  width: 20px;
+  color: var(--color-brass);
+}
+
+/* Rating Section */
+.footer__rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.footer__rating-stars {
+  color: var(--color-brass);
+}
+
+.footer__rating-text {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}
+
+/* Bottom Bar */
+.footer__bottom {
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(245, 240, 230, 0.1);
+  text-align: center;
+}
+
+.footer__bottom p {
+  font-size: var(--text-sm);
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .footer__content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .footer__content {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
