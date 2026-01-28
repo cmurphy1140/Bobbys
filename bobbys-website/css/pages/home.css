@@ -1,0 +1,287 @@
+/* Home Page Styles - Bobby's Restaurant & Lounge */
+
+/* ===== QUICK INFO BAR ===== */
+
+.quick-info {
+  background-color: var(--color-aged-wood);
+  padding: var(--space-lg) 0;
+}
+
+.quick-info__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.quick-info__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm);
+  color: var(--color-cream);
+}
+
+.quick-info__item a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--color-cream);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.quick-info__item a:hover {
+  color: var(--color-brass);
+}
+
+.quick-info__item i {
+  font-size: var(--text-xl);
+  color: var(--color-brass);
+  width: 30px;
+  text-align: center;
+}
+
+.quick-info__item strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+}
+
+.quick-info__item span {
+  font-size: var(--text-sm);
+  opacity: 0.9;
+}
+
+/* ===== ABOUT PREVIEW ===== */
+
+.about-preview {
+  padding: var(--space-3xl) 0;
+  background-color: var(--color-warm-white);
+}
+
+.about-preview__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.about-preview__text h2 {
+  margin-bottom: var(--space-md);
+}
+
+.about-preview__text p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* ===== MENU HIGHLIGHTS ===== */
+
+.menu-highlights {
+  background-color: var(--color-cream);
+  padding: var(--space-3xl) 0;
+}
+
+.menu-highlights__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.menu-card {
+  background-color: var(--color-warm-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.menu-card:hover {
+  box-shadow: var(--shadow-warm);
+  transform: translateY(-2px);
+}
+
+.menu-card__category {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  letter-spacing: 0.1em;
+  color: var(--color-bar-red);
+  margin-bottom: var(--space-md);
+}
+
+.menu-card__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-sm);
+}
+
+.menu-card__name {
+  font-family: var(--font-menu);
+  font-weight: 700;
+}
+
+.menu-card__price {
+  font-family: var(--font-heading);
+  color: var(--color-brass-dark);
+}
+
+.menu-card__description {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+/* ===== ATMOSPHERE GALLERY ===== */
+
+.atmosphere {
+  background-color: var(--color-mahogany);
+  padding: var(--space-3xl) 0;
+}
+
+.atmosphere .section-title h2,
+.atmosphere .section-title .subtitle {
+  color: var(--color-cream);
+}
+
+.atmosphere__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.atmosphere__image {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.atmosphere__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.atmosphere__image:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonials {
+  background-color: var(--color-cream);
+  padding: var(--space-3xl) 0;
+}
+
+.testimonial-card {
+  background-color: var(--color-warm-white);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card__stars {
+  color: var(--color-brass);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-card__quote {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-md);
+}
+
+.testimonial-card__author {
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+/* ===== CTA SECTION ===== */
+
+.cta-section {
+  background-color: var(--color-bar-red);
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: var(--color-cream);
+  margin-bottom: var(--space-md);
+}
+
+.cta-section p {
+  color: var(--color-cream);
+  opacity: 0.9;
+  margin-bottom: var(--space-lg);
+}
+
+.cta-section .btn {
+  background-color: var(--color-cream);
+  color: var(--color-bar-red);
+  border-color: var(--color-cream);
+}
+
+.cta-section .btn:hover {
+  background-color: var(--color-brass);
+  border-color: var(--color-brass);
+  color: var(--color-mahogany);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .quick-info__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quick-info__item {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .quick-info__item a {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .about-preview__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-highlights__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .atmosphere__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .menu-highlights__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .atmosphere__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
