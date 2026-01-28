@@ -49,6 +49,16 @@
   opacity: 0.8;
 }
 
+.nav__logo-img {
+  height: 50px;
+  width: auto;
+  transition: height var(--transition-base);
+}
+
+.header.is-scrolled .nav__logo-img {
+  height: 40px;
+}
+
 /* Desktop Menu */
 .nav__menu {
   display: none;
@@ -261,8 +271,12 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .nav__logo-text {
-    font-size: var(--text-3xl);
+  .nav__logo-img {
+    height: 60px;
+  }
+
+  .header.is-scrolled .nav__logo-img {
+    height: 50px;
   }
 
   .nav__phone span {

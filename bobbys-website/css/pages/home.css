@@ -136,6 +136,19 @@
   margin-bottom: var(--space-md);
 }
 
+/* Section CTA */
+.section-cta {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+/* Heading text (for section headers) */
+.heading-text {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 /* ===== ATMOSPHERE GALLERY ===== */
 
 .atmosphere {
@@ -171,6 +184,37 @@
 
 .atmosphere__image:hover img {
   transform: scale(1.05);
+}
+
+/* Image Placeholder (content-first approach) */
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-aged-wood) 0%, var(--color-dark-oak) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--color-brass);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.image-placeholder::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-brass);
+  border-radius: 50%;
+  opacity: 0.3;
 }
 
 /* ===== TESTIMONIALS ===== */

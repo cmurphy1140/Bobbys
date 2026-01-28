@@ -10,6 +10,7 @@
 
 /* Page Styles */
 @import 'pages/home.css';
+@import 'pages/menu.css';
 @import 'pages/inner-pages.css';
 
 /* ===== BASE STYLES ===== */
@@ -151,6 +152,20 @@ a:hover {
 .section-cream {
   background-color: var(--color-cream);
   color: var(--color-text-dark);
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Fade-in animation for scroll reveal */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ===== DECORATIVE ELEMENTS ===== */

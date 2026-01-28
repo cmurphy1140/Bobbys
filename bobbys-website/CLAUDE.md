@@ -1,62 +1,43 @@
 # Bobby's Restaurant Website
 
-## Project Overview
-A classic American bar-style website for Bobby's Restaurant & Lounge in Vero Beach, FL.
+## Purpose (WHY)
+Classic American bar-style website for Bobby's Restaurant & Lounge in Vero Beach, FL.
+Captures "Warm Wood & Whiskey" aesthetic - dark wood, brass accents, warm lighting.
 
-## Tech Stack
-- HTML5
-- CSS3 (vanilla, with CSS custom properties)
-- Vanilla JavaScript
+## Stack (WHAT)
+- HTML5, CSS3 (with custom properties), Vanilla JavaScript
+- Google Fonts: Playfair Display, Bebas Neue, Lato, Libre Baskerville
+- Font Awesome 6.5.1 (CDN)
 
-## Key Commands
-- Live server: Use VS Code Live Server extension or `npx serve`
-- No build step required
-
-## Code Style
-- Use semantic HTML elements
-- CSS class naming: BEM-style (block__element--modifier)
-- JavaScript: ES6+ features OK
-- Comments for complex sections
-
-## Design System
-- See css/variables.css for color palette and typography
-- Mobile-first responsive design
-- Breakpoints: 768px (tablet), 1024px (desktop)
-
-## Color Palette (Warm Wood & Whiskey)
-- Mahogany: #1a1612 (backgrounds)
-- Aged Wood: #2d231a (cards)
-- Brass: #c9a227 (accents)
-- Cream: #f5f0e6 (text/light areas)
-- Bar Red: #8b2635 (CTAs)
-
-## Typography
-- Display: Playfair Display (logo)
-- Headings: Bebas Neue (sections)
-- Body: Lato (content)
-- Menu: Libre Baskerville (menu items)
-
-## File Structure
+## Project Structure
 ```
 bobbys-website/
-├── index.html
-├── menu.html
-├── about.html
-├── specials.html
-├── contact.html
+├── index.html, menu.html, about.html, specials.html, contact.html
 ├── css/
-│   ├── reset.css
-│   ├── variables.css
-│   ├── main.css
-│   └── components/
-├── js/
-│   └── main.js
-├── images/
-└── CLAUDE.md
+│   ├── variables.css     # Design tokens - colors, typography, spacing
+│   ├── main.css          # Imports all stylesheets
+│   └── components/       # header.css, hero.css, footer.css
+├── js/main.js
+└── images/
 ```
 
-## Restaurant Info
-- Name: Bobby's Restaurant & Lounge
+## Commands (HOW)
+- Serve: `npx serve` or VS Code Live Server
+- No build step required
+
+## Verification
+After changes, verify:
+1. Mobile responsiveness (320px, 768px, 1024px)
+2. Navigation links work
+3. No console errors
+4. Images have alt text
+
+## Key References
+- Design specs: See `bobbys-website-plan.md`
+- Colors/typography: See `css/variables.css`
+- Breakpoints: 768px (tablet), 1024px (desktop), 1440px (large)
+
+## Restaurant Data
 - Address: 3450 Ocean Dr, Vero Beach, FL 32963
 - Phone: (772) 231-6996
 - Hours: Daily 11:30 AM - 1:00 AM
